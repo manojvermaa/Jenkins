@@ -2,10 +2,10 @@ pipeline
 {
 agent any
 stages
-{ stage ('scm checkout')
-  { steps  {sh'echo_code is downloading'}}
-  
- { stage ('please build code')
-  { steps {sh'building code'}}
-  }
+{ stage ('sch checkout')
+  {  steps { sh 'echo code_is_downloading'} }
+
+  stage('please build the code')
+  { steps {  sh 'echo code_is_building' } }
+}
 }
