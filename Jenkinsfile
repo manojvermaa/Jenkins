@@ -6,6 +6,6 @@ stages
   {  steps { sh 'echo code_is_downloading'} }
 
   stage('please build the code')
-  { steps {  sh 'echo code_is_building' } }
+  { steps { sh 'echo code_is_building' } }
 }
 }
